@@ -1,0 +1,159 @@
+video {
+  width: 100%;
+}
+
+.room {
+  padding-top: 1em;
+}
+.intro {
+  background: none;
+  margin-top: 2em;
+}
+.intro p {
+  margin-bottom: 1em;
+}
+
+/* Appartamenti nome */
+.room-name,
+.room-rank {
+  color: #6a5843;
+}
+.room-rank {
+  font-size: 0.8em;
+  margin-top: -0.6em;
+}
+.rank-text {
+  background-color: #903585;
+  color: white;
+  padding: 0 0.1em;
+}
+.room-headernim:after {
+  display: block;
+  border-top: 5px solid #903585;
+  width: 85px;
+  margin: 0.2em 0 0;
+  text-align: right;
+  content: "";
+}
+.room-headernim {
+  margin-bottom: 1em;
+}
+
+/* Splide: images slider */
+/* Placeholder animation while Splide is loading the images. */
+.splide-placeholdernim {
+  max-height: 20em;
+  min-height: 20em;
+  background-color: rgb(197, 195, 195);
+  animation: placeholder-pulse 1.5s infinite ease-in-out;
+  visibility: visible !important;
+}
+.splide__slide {
+  cursor: pointer;
+  background-color: rgb(197, 195, 195);
+  animation: placeholder-pulse 1.5s infinite ease-in-out;
+}
+.splide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@keyframes placeholder-pulse {
+  0% {
+    background-color: #c7c2c8;
+  }
+  50% {
+    background-color: #f1f3f4;
+  }
+  100% {
+    background-color: #c7c2c8;
+  }
+}
+
+/* Appartamenti descrizione */
+.rooms-descrizione {
+  background-color: #fff;
+  padding: 1em;
+  margin-top: 1em;
+  border-top: 1em solid #504033;
+  border-radius: 1em;
+}
+
+.rooms-descrizione p,
+.rooms-descrizione ul {
+  font-weight: 100;
+  font-size: 1em;
+}
+
+/* Fullscreen modal with image */
+.modal-hidden {
+  display: none !important;
+}
+
+.modal-bg {
+  z-index: 1042;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  background: #0b0b0b;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  cursor: zoom-out;
+}
+
+.modal-outer {
+  z-index: 1043;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  cursor: zoom-out;
+}
+
+.modal-inner {
+  z-index: 1044;
+  margin: 0 auto;
+  cursor: zoom-out;
+}
+
+.modal-inner img {
+  max-width: 100%;
+  max-height: 98vh;
+  cursor: zoom-out;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: zoom-out;
+}
+
+/* Descrizione */
+.rooms-descrizione p {
+  margin-bottom: 1em;
+  line-height: 1.5em;
+}
+
+/* Overrides */
+.splide li:before {
+  all: unset;
+}
+
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
+  text-transform: none;
+}
